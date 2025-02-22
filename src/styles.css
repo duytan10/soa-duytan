@@ -1,1 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import "./styles/_reset.scss";
 @import "tailwindcss";
+
+body {
+  font-family: "Poppins", serif;
+}
+
+.bloc2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(235 225 221 / 97%);
+}
+
+.calendar {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.day {
+  padding: 8px 16px;
+  text-align: center;
+  border: 1px solid #f2542d;
+  border-radius: 8px;
+  background-color: #fff4f1;
+}
+.day > .number {
+  color: #562c2c;
+}
+.day > .text {
+  color: #f2542d;
+}
+
+.disabled {
+  border-radius: 8px;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  color: #999999;
+}
+
+.disabled > .number {
+  color: inherit;
+}
+.day > .text {
+  color: inherit;
+}
+
+.empty {
+  background-color: #dfdfdf;
+  border: 1px solid #d7d7d7;
+  color: #999999;
+}
