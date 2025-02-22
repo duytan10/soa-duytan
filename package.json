@@ -1,7 +1,6 @@
 {
   "name": "soa-duytan",
   "homepage": "https://duytan10.github.io/soa-duytan/",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run deploy"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.8",
